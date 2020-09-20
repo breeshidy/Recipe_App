@@ -26,9 +26,9 @@ public class RecipeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-
                 Intent i = new Intent(RecipeActivity.this,LoginActivity.class);
                 startActivity(i);
+                finish();
             }
         });
 
